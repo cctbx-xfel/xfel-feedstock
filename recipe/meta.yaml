@@ -46,8 +46,8 @@ requirements:
     - libboost-python-devel
     - libboost-devel
     - libglu  # [linux]
-    - msgpack-cxx
-    - numpy
+    - msgpack-cxx < 7
+    - numpy < 2
     - pip
     - pybind11
     - python
