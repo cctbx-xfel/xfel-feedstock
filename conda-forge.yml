@@ -6,7 +6,7 @@ azure:
 build_platform:
   osx_arm64: osx_64
 github:
-  user_or_org: cci-lbl
+  user_or_org: cctbx-xfel
   repo_name: xfel-feedstock
   branch_name: main
   tooling_branch_name: main

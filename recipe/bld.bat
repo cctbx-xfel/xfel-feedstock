@@ -111,10 +111,3 @@ del /S /Q %LIBRARY_PREFIX%\bin\xia2.*
 cd ..\xia2
 %PYTHON% -m pip install . -vv --no-deps
 if %errorlevel% neq 0 exit /b %errorlevel%
-
-cd ..\..
-
-REM copy amber force field files
-SET EXTRA_GROMACS_DIR=%LIBRARY_PREFIX%\share\gromacs\top
-mkdir  %EXTRA_GROMACS_DIR%
-xcopy /E /I %RECIPE_DIR%\extra\amber14sb.ff %EXTRA_GROMACS_DIR%\amber14sb.ff
