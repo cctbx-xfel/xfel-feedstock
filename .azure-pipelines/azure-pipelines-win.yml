@@ -67,7 +67,7 @@ jobs:
 
     - task: PublishPipelineArtifact@1
       displayName: Store conda build environment artifacts
-      condition: not(eq(variables.ENV_ARTIFACT_PATH, ''))
+      condition: false
       inputs:
         targetPath: $(ENV_ARTIFACT_PATH)
         artifactName: $(ENV_ARTIFACT_NAME)
